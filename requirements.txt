@@ -1,0 +1,2 @@
+# standard library only for the demo; pytest for tests
+pytest>=8
