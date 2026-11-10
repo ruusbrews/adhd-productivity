@@ -113,7 +113,7 @@ def run(scenario_path: Path, out: Path, guardrail: bool = True, seed: int | None
         passed, detail = check_assertion(a, audit, ok)
         results.append({"id": a["id"], "desc": a["desc"], "passed": passed, "detail": detail})
 
-    blocks = Counter()
+    blocks, modifies = Counter(), Counter()
     unsupported = 0
     cited = Counter()
     for r in audit.records:
@@ -121,8 +121,12 @@ def run(scenario_path: Path, out: Path, guardrail: bool = True, seed: int | None
         reviews = [payload["policy_review"]] if r["event"] in ("decision", "standing_mode") else []
         for pr in reviews:
             for rule in pr["rules"]:
-                if pr["decision"] == "block":
+                # count each rule by its own decision type, so a "modify" rule that appears inside a decision
+                # another rule blocked is not reported as a block
+                if rule["decision"] == "block":
                     blocks[rule["rule"]] += 1
+                elif rule["decision"] == "modify":
+                    modifies[rule["rule"]] += 1
                 unsupported += rule["unsupported_by_retrieval"]
                 for c in rule["citations"]:
                     cited[c["verified"]] += 1
@@ -132,7 +136,7 @@ def run(scenario_path: Path, out: Path, guardrail: bool = True, seed: int | None
                     cited[c["verified"]] += 1
     summary = {
         "scenario": sc["name"], "guardrail_enabled": guardrail, "audit_records": n, "audit_chain": msg,
-        "user_metrics": user.metrics(), "blocking_decisions_by_rule": dict(blocks),
+        "user_metrics": user.metrics(), "blocking_decisions_by_rule": dict(blocks), "modifying_decisions_by_rule": dict(modifies),
         "citations_verified_vs_unverified": {"verified": cited.get("true", 0), "unverified": cited.get("false", 0)},
         "rules_unsupported_by_retrieval": unsupported,
         "policy_gaps_surfaced": sorted(advisor.gaps_seen),

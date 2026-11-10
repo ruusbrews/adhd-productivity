@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-11-10T10:49:15+00:00",
+  "kb_stats": {
+    "kb_main": 37,
+    "kb_framework": 19,
+    "kb_decisions": 0,
+    "kb_usecase": 1779
+  },
+  "files_in_kb_main": 37,
+  "chunks_in_kb_main": 37,
+  "country_metadata": {
+    "global": 35,
+    "United States": 1,
+    "Saudi Arabia": 1
+  },
+  "k": 3,
+  "queries": [
+    {
+      "query": "emotion inference attention students school biometric",
+      "expected_top1": "ec-guidelines-prohibited-ai-practices-2025",
+      "itu_topk": [
+        {
+          "doc_id": "ec-guidelines-prohibited-ai-practices-2025",
+          "cosine_distance": 0.3657,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "eu-ai-act-2024-1689",
+          "cosine_distance": 0.3684,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "ieee-7014-2024",
+          "cosine_distance": 0.4216,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "ec-guidelines-prohibited-ai-practices-2025",
+          "bm25": 12.549
+        },
+        {
+          "doc_id": "eu-ai-act-2024-1689",
+          "bm25": 11.13
+        },
+        {
+          "doc_id": "ieee-7014-2024",
+          "bm25": 7.244
+        }
+      ],
+      "top1_agree": true,
+      "overlap_at_k": 3,
+      "itu_hit_at_1": true,
+      "itu_hit_at_k": true,
+      "bm25_hit_at_1": true
+    },
+    {
+      "query": "streak variable rewards minors notification default",
+      "expected_top1": "eu-dsa-art28-minors-guidelines-2025",
+      "itu_topk": [
+        {
+          "doc_id": "eu-dsa-art28-minors-guidelines-2025",
+          "cosine_distance": 0.3833,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "qatar-ncsa-privacy-notice-guideline",
+          "cosine_distance": 0.4827,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "uk-ico-age-appropriate-design-code",
+          "cosine_distance": 0.5023,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "eu-dsa-art28-minors-guidelines-2025",
+          "bm25": 15.941
+        },
+        {
+          "doc_id": "uk-ico-age-appropriate-design-code",
+          "bm25": 5.393
+        },
+        {
+          "doc_id": "saudi-pdpl-2021",
+          "bm25": 2.874
+        }
+      ],
+      "top1_agree": true,
+      "overlap_at_k": 2,
+      "itu_hit_at_1": true,
+      "itu_hit_at_k": true,
+      "bm25_hit_at_1": true
+    },
+    {
+      "query": "special nature data children health permit",
+      "expected_top1": "qatar-pdppl-13-2016",
+      "itu_topk": [
+        {
+          "doc_id": "qatar-ncsa-privacy-notice-guideline",
+          "cosine_distance": 0.3223,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "us-coppa-rule-2025-amendments",
+          "cosine_distance": 0.3499,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "uk-ico-age-appropriate-design-code",
+          "cosine_distance": 0.3516,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "qatar-pdppl-13-2016",
+          "bm25": 13.823
+        },
+        {
+          "doc_id": "qatar-ncsa-privacy-notice-guideline",
+          "bm25": 11.819
+        },
+        {
+          "doc_id": "eu-gdpr-2016-679",
+          "bm25": 7.121
+        }
+      ],
+      "top1_agree": false,
+      "overlap_at_k": 1,
+      "itu_hit_at_1": false,
+      "itu_hit_at_k": false,
+      "bm25_hit_at_1": true
+    },
+    {
+      "query": "wellness claim medical device ADHD",
+      "expected_top1": "fda-general-wellness-2026",
+      "itu_topk": [
+        {
+          "doc_id": "fda-general-wellness-2026",
+          "cosine_distance": 0.2495,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "imdrf-samd-n12-2014",
+          "cosine_distance": 0.3042,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "imdrf-n81-2025",
+          "cosine_distance": 0.3282,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "fda-general-wellness-2026",
+          "bm25": 14.163
+        },
+        {
+          "doc_id": "mdcg-2019-11-rev1",
+          "bm25": 10.676
+        },
+        {
+          "doc_id": "imdrf-samd-n12-2014",
+          "bm25": 6.898
+        }
+      ],
+      "top1_agree": true,
+      "overlap_at_k": 2,
+      "itu_hit_at_1": true,
+      "itu_hit_at_k": true,
+      "bm25_hit_at_1": true
+    },
+    {
+      "query": "in-app purchases promoted to children manipulative design",
+      "expected_top1": null,
+      "itu_topk": [
+        {
+          "doc_id": "uk-ico-age-appropriate-design-code",
+          "cosine_distance": 0.3652,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "eu-dsa-art28-minors-guidelines-2025",
+          "cosine_distance": 0.3928,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "ftc-dark-patterns-2022",
+          "cosine_distance": 0.4264,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "eu-ai-act-2024-1689",
+          "bm25": 7.427
+        },
+        {
+          "doc_id": "eu-dsa-art28-minors-guidelines-2025",
+          "bm25": 7.17
+        },
+        {
+          "doc_id": "uk-ico-age-appropriate-design-code",
+          "bm25": 4.814
+        }
+      ],
+      "top1_agree": false,
+      "overlap_at_k": 2,
+      "itu_hit_at_1": null,
+      "itu_hit_at_k": null,
+      "bm25_hit_at_1": null
+    },
+    {
+      "query": "targeted advertising based on inferred disability or health signals",
+      "expected_top1": null,
+      "itu_topk": [
+        {
+          "doc_id": "fda-general-wellness-2026",
+          "cosine_distance": 0.355,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "ftc-dark-patterns-2022",
+          "cosine_distance": 0.3695,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "eu-ucpd-2005-29",
+          "cosine_distance": 0.3739,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "mdcg-2019-11-rev1",
+          "bm25": 5.701
+        },
+        {
+          "doc_id": "eu-ai-act-2024-1689",
+          "bm25": 3.461
+        },
+        {
+          "doc_id": "ftc-dark-patterns-2022",
+          "bm25": 3.21
+        }
+      ],
+      "top1_agree": false,
+      "overlap_at_k": 1,
+      "itu_hit_at_1": null,
+      "itu_hit_at_k": null,
+      "bm25_hit_at_1": null
+    },
+    {
+      "query": "explicit consent for processing sensitive health or biometric data",
+      "expected_top1": null,
+      "itu_topk": [
+        {
+          "doc_id": "uae-pdpl-fdl-45-2021",
+          "cosine_distance": 0.2914,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "bahrain-pdpl-30-2018",
+          "cosine_distance": 0.3063,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "saudi-pdpl-2021",
+          "cosine_distance": 0.3084,
+          "chunk": "0/1",
+          "country": "Saudi Arabia",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "eu-gdpr-2016-679",
+          "bm25": 15.741
+        },
+        {
+          "doc_id": "uae-pdpl-fdl-45-2021",
+          "bm25": 12.331
+        },
+        {
+          "doc_id": "qatar-pdppl-13-2016",
+          "bm25": 10.144
+        }
+      ],
+      "top1_agree": false,
+      "overlap_at_k": 1,
+      "itu_hit_at_1": null,
+      "itu_hit_at_k": null,
+      "bm25_hit_at_1": null
+    },
+    {
+      "query": "human oversight and review of automated decisions about a person",
+      "expected_top1": null,
+      "itu_topk": [
+        {
+          "doc_id": "who-ethics-governance-ai-health-2021",
+          "cosine_distance": 0.3189,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "unesco-rec-ethics-ai-2021",
+          "cosine_distance": 0.3282,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        },
+        {
+          "doc_id": "oecd-ai-principles",
+          "cosine_distance": 0.3423,
+          "chunk": "0/1",
+          "country": "global",
+          "document_category": "Policy_Register"
+        }
+      ],
+      "bm25_topk": [
+        {
+          "doc_id": "bahrain-ai-general-policy-2025",
+          "bm25": 6.701
+        },
+        {
+          "doc_id": "eu-ai-act-2024-1689",
+          "bm25": 6.232
+        },
+        {
+          "doc_id": "eu-gdpr-2016-679",
+          "bm25": 6.094
+        }
+      ],
+      "top1_agree": false,
+      "overlap_at_k": 0,
+      "itu_hit_at_1": null,
+      "itu_hit_at_k": null,
+      "bm25_hit_at_1": null
+    }
+  ]
+}

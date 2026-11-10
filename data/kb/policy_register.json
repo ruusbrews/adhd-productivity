@@ -21,14 +21,14 @@
       {
         "ref": "Art. 5(1)(a)-(b)",
         "paraphrase": "Bans manipulative/deceptive techniques and exploitation of vulnerabilities due to age, disability or socio-economic situation that materially distort behaviour and cause significant harm.",
-        "relevance_to_adhd_app": "Reward loops or nudges exploiting impulsivity (e.g., to drive purchases) risk this ban.",
-        "verified": false
+        "relevance_to_adhd_app": "Reward loops or nudges exploiting impulsivity (e.g., to drive purchases) risk this ban. Commission guidelines C(2025) 884 para. 105 give as a prohibited example a game that gives children personalised, unpredictable rewards through addictive reinforcement schedules, where it causes significant harm.",
+        "verified": true
       },
       {
         "ref": "Art. 3(39); Recital 18",
         "paraphrase": "Emotion recognition means inferring emotions or intentions from biometric data; physical states such as pain or fatigue are excluded.",
-        "relevance_to_adhd_app": "Whether 'attention' is an emotion or a cognitive/physical state decides applicability.",
-        "verified": false
+        "relevance_to_adhd_app": "Whether 'attention' is an emotion or a cognitive/physical state decides applicability. Commission guidelines para. 240 and 255 treat inferring learners' attention or interest as emotion recognition; fatigue stays excluded (para. 249, 261).",
+        "verified": true
       },
       {
         "ref": "Art. 6, Annex III (1(c), 3); Arts. 13-14",
@@ -92,15 +92,15 @@
     "relevant_provisions": [
       {
         "ref": "Art. 5(1)(f) examples",
-        "paraphrase": "An education institution using emotion recognition to infer students' interest and attention is a prohibited example; fatigue detection for pilots/drivers is not emotion recognition.",
-        "relevance_to_adhd_app": "Directly maps onto attention-state monitoring; avoid institutional deployment.",
+        "paraphrase": "An education institution using emotion recognition to infer students' interest and attention is a prohibited example (para. 255); gaze tracking that only records fixation points without inferring emotions is not prohibited (para. 255); fatigue detection for pilots/drivers is not emotion recognition (para. 249, 261). The medical exception is narrow: therapeutic use means CE-marked medical devices, general wellbeing monitoring is not covered (para. 256-257), while assisting students with autism can qualify (para. 263).",
+        "relevance_to_adhd_app": "Directly maps onto attention-state monitoring; avoid institutional deployment. A wellness-claim app cannot rely on the medical exception.",
         "verified": true
       },
       {
         "ref": "Intentions; biometric limitation",
-        "paraphrase": "Covers intention inference too, but only biometric-based inference; text sentiment is outside.",
-        "relevance_to_adhd_app": "Gaze and keystroke dynamics are biometric-derived; typed content sentiment may not be.",
-        "verified": false
+        "paraphrase": "Covers inference of emotions and intentions, but only on the basis of biometric data (para. 244-245, 250). Biometric data includes behavioural biometrics such as keystrokes (way of typing), eye tracking and heartbeats (para. 251); inferring emotions from written text is outside (para. 251, 265).",
+        "relevance_to_adhd_app": "Gaze, HRV/EDA and keystroke dynamics are biometric; typed content sentiment is not. The guidelines do not say whether task-performance data (missed items, reaction-time variability) counts as behavioural biometrics.",
+        "verified": true
       }
     ],
     "tags": [
@@ -125,20 +125,20 @@
       {
         "ref": "Art. 9(1)-(2)(a)",
         "paraphrase": "Prohibits processing health data and identifying biometric data unless an exception such as explicit consent applies.",
-        "relevance_to_adhd_app": "HRV/EDA-derived attention or stress states in an ADHD context are very likely health data; explicit granular consent needed.",
-        "verified": false
+        "relevance_to_adhd_app": "HRV/EDA-derived attention or stress states in an ADHD context are very likely health data; explicit granular consent needed. Note Art. 9(1) covers biometric data only when processed for uniquely identifying a person.",
+        "verified": true
       },
       {
         "ref": "Art. 8",
         "paraphrase": "Child consent for online services valid from 16 (Member States may lower to 13); below that parental authorisation is required.",
         "relevance_to_adhd_app": "Younger students need verifiable parental consent.",
-        "verified": false
+        "verified": true
       },
       {
         "ref": "Arts. 22, 35",
         "paraphrase": "Limits solely automated decisions with significant effects; DPIA required for high-risk processing such as large-scale special-category data.",
         "relevance_to_adhd_app": "DPIA effectively mandatory.",
-        "verified": false
+        "verified": true
       }
     ],
     "tags": [
@@ -188,28 +188,28 @@
   },
   {
     "doc_id": "us-coppa-rule-2025-amendments",
-    "title": "Children's Online Privacy Protection Rule, 16 CFR Part 312 — 2025 amendments (Federal Register, 22 April 2025; page cite reported as both 90 FR 16918 and 90 FR 16970 — unverified)",
+    "title": "Children's Online Privacy Protection Rule, 16 CFR Part 312 — 2025 amendments (eCFR source note: 78 FR 4008, Jan. 17, 2013, as amended at 90 FR 16977, Apr. 22, 2025)",
     "issuer": "US Federal Trade Commission",
     "jurisdiction": "US",
     "doc_type": "regulation",
     "year": 2025,
     "status": "in force",
-    "url_primary": "https://www.privacylawnetwork.com/news/coppa-rule-2025-amendments.html",
-    "url_pdf_or_fulltext": "https://www.finnegan.com/en/insights/articles/coppas-amended-rule-is-now-in-full-effect-what-operators-need-to-know.html",
+    "url_primary": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312",
+    "url_pdf_or_fulltext": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312",
     "language": "English",
-    "license_or_reuse_terms": "US federal text public domain; Federal Register original NOT opened (secondary sources).",
+    "license_or_reuse_terms": "US federal text public domain. Checked against eCFR text up to date as of 6 Nov 2026 (authoritative but unofficial); Federal Register original not opened.",
     "relevant_provisions": [
       {
         "ref": "§312.2 'personal information' (10)",
         "paraphrase": "Adds biometric identifiers usable for automated recognition, e.g. fingerprints, iris/retina, voiceprints, gait patterns, facial templates, genetic data.",
-        "relevance_to_adhd_app": "Gait/motion and face templates from under-13s covered; HRV/EDA not named.",
-        "verified": false
+        "relevance_to_adhd_app": "Gait/motion and face templates from under-13s covered; HRV/EDA not named. COPPA covers children under 13 only (§312.2 'Child'), so a 13-17-year-old user is outside it.",
+        "verified": true
       },
       {
-        "ref": "§312.5(a)(2); retention policy",
-        "paraphrase": "Separate parental consent before disclosing children's data to third parties; written retention policy; compliance due 22 April 2026.",
-        "relevance_to_adhd_app": "No ad/analytics SDK sharing without separate consent; define deletion schedules.",
-        "verified": false
+        "ref": "§312.5(a)(2); §312.10; §312.2 'support for the internal operations' (2)",
+        "paraphrase": "Parents must be able to consent to collection and use without consenting to disclosure to third parties, unless disclosure is integral to the service, and the operator must obtain separate verifiable parental consent to such disclosure (§312.5(a)(2)); data may not be retained indefinitely and a written retention policy must state purposes, business need and a deletion timeframe (§312.10); data collected for internal operations may not be used for behavioral advertising or to amass a profile on a specific individual (§312.2). Compliance date 22 April 2026 as reported, not shown in eCFR.",
+        "relevance_to_adhd_app": "No ad/analytics SDK sharing without separate consent; inferred-state profiles must not feed behavioral ads; define deletion schedules. Applies to under-13s only.",
+        "verified": true
       }
     ],
     "tags": [
@@ -493,14 +493,14 @@
     "license_or_reuse_terms": "EUR-Lex/Commission reuse (attribution).",
     "relevant_provisions": [
       {
-        "ref": "Section 6.4 interface design",
-        "paraphrase": "Minors should not face engagement-driven persuasive design or manipulative techniques like scarcity or intermittent/random rewards.",
+        "ref": "Section 6.4(b); Section 6.6 para. 69(k)-(l)",
+        "paraphrase": "Minors should not be exposed to persuasive design features aimed predominantly at engagement that may lead to overuse (Section 6.4, Online interface design), nor to manipulative design techniques such as scarcity, intermittent or random rewards, or to paid loot boxes with random outcomes, that can lead to excessive or unwanted spending or addictive behaviour (Section 6.6, Commercial practices, para. 69(k)-(l)).",
         "relevance_to_adhd_app": "Variable-ratio rewards collide with this; use predictable user-set rewards.",
         "verified": true
       },
       {
-        "ref": "Default settings",
-        "paraphrase": "Push notifications should be off by default for minors and always off during core sleep hours; streaks, autoplay and similar excessive-use features disabled by default.",
+        "ref": "Section 6.3.1 Default settings, para. 57(b)",
+        "paraphrase": "Push notifications should be off by default for minors and always off during core sleep hours (para. 57(b)(vii)); streaks, autoplay and similar excessive-use features disabled by default (para. 57(b)(vi), (viii)).",
         "relevance_to_adhd_app": "Break prompts for minors should be opt-in, if the app is an 'online platform' (uncertain).",
         "verified": true
       }
