@@ -24,8 +24,8 @@
     "R2b-push-default-minors": 9
   },
   "citations_verified_vs_unverified": {
-    "verified": 123,
-    "unverified": 54
+    "verified": 146,
+    "unverified": 31
   },
   "rules_unsupported_by_retrieval": 0,
   "policy_gaps_surfaced": [
@@ -65,7 +65,7 @@
       "id": "X5",
       "desc": "Adviser finds prohibited institutional attention inference once telemetry arrives",
       "passed": true,
-      "detail": "seen at tick 110 (confidence medium, missing [])"
+      "detail": "seen at tick 110 (confidence high, missing [])"
     },
     {
       "id": "X6",

@@ -37,9 +37,10 @@ python -m pytest -q
 | `kb_evidence` | 8 signals, 7 simulator parameters, 7 existing-tool records | `docs/research/B2_signals_parameters.md` |
 
 Records carry the ITU reference schema keys (`source_file, source_type, country, chunk_index, total_chunks,
-ingested_at, document_category`) plus `verified` / `url_primary` / `license_or_reuse_terms`. **32 of 58 policy
+ingested_at, document_category`) plus `verified` / `url_primary` / `license_or_reuse_terms`. **29 of 58 policy
 provisions are still `UNVERIFIED`** (not confirmed against primary text); the agents surface that flag in every
-citation. Only paraphrases and links are stored (several sources are copyrighted).
+citation. What was checked, against which source and paragraph, is recorded in
+[docs/verification_log.md](docs/verification_log.md). Only paraphrases and links are stored (several sources are copyrighted).
 
 ## Architecture (Y.3172 mapping: see `docs/mapping.md`)
 

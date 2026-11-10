@@ -10,7 +10,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "arousal"
@@ -27,7 +27,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "arousal"
@@ -44,7 +44,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "cognitive_control"
@@ -61,7 +61,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "physical_or_fatigue"
@@ -78,7 +78,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "arousal"
@@ -95,7 +95,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "arousal"
@@ -112,7 +112,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "physical_or_fatigue"
@@ -129,7 +129,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "validated_realtime": "false",
       "construct": "arousal"
@@ -146,7 +146,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -161,7 +161,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -176,7 +176,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -191,7 +191,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -206,7 +206,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -221,7 +221,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -236,7 +236,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence"
     }
   },
@@ -251,7 +251,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Treatment claim (Rx)",
       "verified": "Yes (FDA decision summary opened)"
@@ -268,7 +268,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Treatment claim (OTC)",
       "verified": "Yes for 510(k) status (SEC 8-K exhibit); claim wording not verified"
@@ -285,7 +285,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Treatment claim (Rx device)",
       "verified": "FDA De Novo yes (FDA document indexed); CE mark verified: false (secondary)"
@@ -302,7 +302,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Assessment aid, not treatment",
       "verified": "K133382 yes (FDA K173915 document); K190726 verified: false"
@@ -319,7 +319,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Assessment aid",
       "verified": "Yes (FDA document)"
@@ -336,7 +336,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Assessment aid",
       "verified": "Yes (FDA de novo K112711 record)"
@@ -353,7 +353,7 @@
       "country": "global",
       "chunk_index": "0",
       "total_chunks": "1",
-      "ingested_at": "2026-11-07T17:02:33+00:00",
+      "ingested_at": "2026-11-10T11:22:17+00:00",
       "document_category": "Evidence",
       "category": "Wellness wording",
       "verified": "Not assessed"
