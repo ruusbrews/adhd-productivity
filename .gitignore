@@ -1,3 +1,5 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+# ITU ingest vector store (39 MB, mostly ITU's own use-case PDFs); rebuild with scripts/run_itu_ingest.sh
+runs/itu_ingest/chromadb/

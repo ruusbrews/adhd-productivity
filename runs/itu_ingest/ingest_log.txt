@@ -1,0 +1,387 @@
+2026-11-10 13:46:54,828 INFO     __main__: Loading framework definitions...
+2026-11-10 13:47:01,135 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:01,172 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:01,203 INFO     server.knowledge.kb: Added 19 documents to collection 'kb_framework'
+2026-11-10 13:47:01,203 INFO     __main__: Loaded 19 framework definitions into kb_framework
+2026-11-10 13:47:01,204 INFO     __main__: Ingesting Australia_NT_nt-ai-assurance-framework.md ...
+2026-11-10 13:47:01,205 INFO     __main__:   1 chunks from Australia_NT_nt-ai-assurance-framework.md
+2026-11-10 13:47:03,369 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+C:\Users\Roaa_\OneDrive - University of Doha for Science and Technology\Documents\GitHub\ITUAIReadiness\simulation\server\knowledge\ingest.py:261: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "ingested_at": datetime.utcnow().isoformat(),
+2026-11-10 13:47:03,398 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:03,398 INFO     __main__:   Stored 1 chunks from Australia_NT_nt-ai-assurance-framework.md
+2026-11-10 13:47:03,398 INFO     __main__: Ingesting Bahrain_bahrain-ai-general-policy-2025.md ...
+2026-11-10 13:47:03,398 INFO     __main__:   1 chunks from Bahrain_bahrain-ai-general-policy-2025.md
+2026-11-10 13:47:05,568 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:05,585 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:05,585 INFO     __main__:   Stored 1 chunks from Bahrain_bahrain-ai-general-policy-2025.md
+2026-11-10 13:47:05,585 INFO     __main__: Ingesting Bahrain_bahrain-ntp6-2023.md ...
+2026-11-10 13:47:05,585 INFO     __main__:   1 chunks from Bahrain_bahrain-ntp6-2023.md
+2026-11-10 13:47:07,757 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:07,774 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:07,774 INFO     __main__:   Stored 1 chunks from Bahrain_bahrain-ntp6-2023.md
+2026-11-10 13:47:07,774 INFO     __main__: Ingesting Bahrain_bahrain-pdpl-30-2018.md ...
+2026-11-10 13:47:07,774 INFO     __main__:   1 chunks from Bahrain_bahrain-pdpl-30-2018.md
+2026-11-10 13:47:09,934 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:09,951 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:09,951 INFO     __main__:   Stored 1 chunks from Bahrain_bahrain-pdpl-30-2018.md
+2026-11-10 13:47:09,951 INFO     __main__: Ingesting EU_ec-guidelines-prohibited-ai-practices-2025.md ...
+2026-11-10 13:47:09,951 INFO     __main__:   1 chunks from EU_ec-guidelines-prohibited-ai-practices-2025.md
+2026-11-10 13:47:12,141 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:12,157 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:12,157 INFO     __main__:   Stored 1 chunks from EU_ec-guidelines-prohibited-ai-practices-2025.md
+2026-11-10 13:47:12,157 INFO     __main__: Ingesting EU_eu-ai-act-2024-1689.md ...
+2026-11-10 13:47:12,158 INFO     __main__:   1 chunks from EU_eu-ai-act-2024-1689.md
+2026-11-10 13:47:14,351 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:14,360 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:14,361 INFO     __main__:   Stored 1 chunks from EU_eu-ai-act-2024-1689.md
+2026-11-10 13:47:14,361 INFO     __main__: Ingesting EU_eu-digital-omnibus-ai-2026-1744.md ...
+2026-11-10 13:47:14,361 INFO     __main__:   1 chunks from EU_eu-digital-omnibus-ai-2026-1744.md
+2026-11-10 13:47:16,550 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:16,568 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:16,568 INFO     __main__:   Stored 1 chunks from EU_eu-digital-omnibus-ai-2026-1744.md
+2026-11-10 13:47:16,568 INFO     __main__: Ingesting EU_eu-dsa-art28-minors-guidelines-2025.md ...
+2026-11-10 13:47:16,568 INFO     __main__:   1 chunks from EU_eu-dsa-art28-minors-guidelines-2025.md
+2026-11-10 13:47:18,736 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:18,753 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:18,753 INFO     __main__:   Stored 1 chunks from EU_eu-dsa-art28-minors-guidelines-2025.md
+2026-11-10 13:47:18,753 INFO     __main__: Ingesting EU_eu-gdpr-2016-679.md ...
+2026-11-10 13:47:18,753 INFO     __main__:   1 chunks from EU_eu-gdpr-2016-679.md
+2026-11-10 13:47:20,939 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:20,956 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:20,956 INFO     __main__:   Stored 1 chunks from EU_eu-gdpr-2016-679.md
+2026-11-10 13:47:20,956 INFO     __main__: Ingesting EU_eu-ucpd-2005-29.md ...
+2026-11-10 13:47:20,957 INFO     __main__:   1 chunks from EU_eu-ucpd-2005-29.md
+2026-11-10 13:47:23,141 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:23,158 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:23,158 INFO     __main__:   Stored 1 chunks from EU_eu-ucpd-2005-29.md
+2026-11-10 13:47:23,158 INFO     __main__: Ingesting EU_mdcg-2019-11-rev1.md ...
+2026-11-10 13:47:23,158 INFO     __main__:   1 chunks from EU_mdcg-2019-11-rev1.md
+2026-11-10 13:47:25,356 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:25,373 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:25,373 INFO     __main__:   Stored 1 chunks from EU_mdcg-2019-11-rev1.md
+2026-11-10 13:47:25,373 INFO     __main__: Ingesting global_ieee-7014-2024.md ...
+2026-11-10 13:47:25,373 INFO     __main__:   1 chunks from global_ieee-7014-2024.md
+2026-11-10 13:47:27,567 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:27,585 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:27,585 INFO     __main__:   Stored 1 chunks from global_ieee-7014-2024.md
+2026-11-10 13:47:27,585 INFO     __main__: Ingesting global_imdrf-n81-2025.md ...
+2026-11-10 13:47:27,585 INFO     __main__:   1 chunks from global_imdrf-n81-2025.md
+2026-11-10 13:47:29,768 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:29,780 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:29,780 INFO     __main__:   Stored 1 chunks from global_imdrf-n81-2025.md
+2026-11-10 13:47:29,780 INFO     __main__: Ingesting global_imdrf-samd-n12-2014.md ...
+2026-11-10 13:47:29,780 INFO     __main__:   1 chunks from global_imdrf-samd-n12-2014.md
+2026-11-10 13:47:31,969 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:31,985 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:31,985 INFO     __main__:   Stored 1 chunks from global_imdrf-samd-n12-2014.md
+2026-11-10 13:47:31,985 INFO     __main__: Ingesting global_iso-iec-23894-2023.md ...
+2026-11-10 13:47:31,985 INFO     __main__:   1 chunks from global_iso-iec-23894-2023.md
+2026-11-10 13:47:34,185 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:34,201 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:34,201 INFO     __main__:   Stored 1 chunks from global_iso-iec-23894-2023.md
+2026-11-10 13:47:34,201 INFO     __main__: Ingesting global_iso-iec-42001-2023.md ...
+2026-11-10 13:47:34,202 INFO     __main__:   1 chunks from global_iso-iec-42001-2023.md
+2026-11-10 13:47:36,392 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:36,402 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:36,402 INFO     __main__:   Stored 1 chunks from global_iso-iec-42001-2023.md
+2026-11-10 13:47:36,402 INFO     __main__: Ingesting global_itu-ai-ready-report-2-0.md ...
+2026-11-10 13:47:36,402 INFO     __main__:   1 chunks from global_itu-ai-ready-report-2-0.md
+2026-11-10 13:47:38,599 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:38,616 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:38,617 INFO     __main__:   Stored 1 chunks from global_itu-ai-ready-report-2-0.md
+2026-11-10 13:47:38,617 INFO     __main__: Ingesting global_itu-t-y3172.md ...
+2026-11-10 13:47:38,617 INFO     __main__:   1 chunks from global_itu-t-y3172.md
+2026-11-10 13:47:40,809 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:40,833 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:40,833 INFO     __main__:   Stored 1 chunks from global_itu-t-y3172.md
+2026-11-10 13:47:40,833 INFO     __main__: Ingesting global_itu-t-y3173-y3174.md ...
+2026-11-10 13:47:40,833 INFO     __main__:   1 chunks from global_itu-t-y3173-y3174.md
+2026-11-10 13:47:43,037 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:43,055 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:43,055 INFO     __main__:   Stored 1 chunks from global_itu-t-y3173-y3174.md
+2026-11-10 13:47:43,055 INFO     __main__: Ingesting global_oecd-ai-principles.md ...
+2026-11-10 13:47:43,055 INFO     __main__:   1 chunks from global_oecd-ai-principles.md
+2026-11-10 13:47:45,227 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:45,238 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:45,238 INFO     __main__:   Stored 1 chunks from global_oecd-ai-principles.md
+2026-11-10 13:47:45,238 INFO     __main__: Ingesting global_oecd-classification-ai-systems-2022.md ...
+2026-11-10 13:47:45,238 INFO     __main__:   1 chunks from global_oecd-classification-ai-systems-2022.md
+2026-11-10 13:47:47,450 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:47,469 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:47,469 INFO     __main__:   Stored 1 chunks from global_oecd-classification-ai-systems-2022.md
+2026-11-10 13:47:47,469 INFO     __main__: Ingesting global_un-crpd-2006.md ...
+2026-11-10 13:47:47,469 INFO     __main__:   1 chunks from global_un-crpd-2006.md
+2026-11-10 13:47:49,667 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:49,685 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:49,685 INFO     __main__:   Stored 1 chunks from global_un-crpd-2006.md
+2026-11-10 13:47:49,685 INFO     __main__: Ingesting global_un-pact-future-gdc-a-res-79-1.md ...
+2026-11-10 13:47:49,685 INFO     __main__:   1 chunks from global_un-pact-future-gdc-a-res-79-1.md
+2026-11-10 13:47:51,869 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:51,881 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:51,881 INFO     __main__:   Stored 1 chunks from global_un-pact-future-gdc-a-res-79-1.md
+2026-11-10 13:47:51,881 INFO     __main__: Ingesting global_unesco-ram-2023.md ...
+2026-11-10 13:47:51,881 INFO     __main__:   1 chunks from global_unesco-ram-2023.md
+2026-11-10 13:47:54,063 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:54,080 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:54,081 INFO     __main__:   Stored 1 chunks from global_unesco-ram-2023.md
+2026-11-10 13:47:54,081 INFO     __main__: Ingesting global_unesco-rec-ethics-ai-2021.md ...
+2026-11-10 13:47:54,081 INFO     __main__:   1 chunks from global_unesco-rec-ethics-ai-2021.md
+2026-11-10 13:47:56,271 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:56,289 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:56,289 INFO     __main__:   Stored 1 chunks from global_unesco-rec-ethics-ai-2021.md
+2026-11-10 13:47:56,289 INFO     __main__: Ingesting global_w3c-coga-usable-2021.md ...
+2026-11-10 13:47:56,289 INFO     __main__:   1 chunks from global_w3c-coga-usable-2021.md
+2026-11-10 13:47:58,470 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:47:58,486 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:47:58,486 INFO     __main__:   Stored 1 chunks from global_w3c-coga-usable-2021.md
+2026-11-10 13:47:58,486 INFO     __main__: Ingesting global_w3c-wcag-2-2.md ...
+2026-11-10 13:47:58,486 INFO     __main__:   1 chunks from global_w3c-wcag-2-2.md
+2026-11-10 13:48:00,652 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:00,670 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:00,670 INFO     __main__:   Stored 1 chunks from global_w3c-wcag-2-2.md
+2026-11-10 13:48:00,670 INFO     __main__: Ingesting global_who-ethics-governance-ai-health-2021.md ...
+2026-11-10 13:48:00,670 INFO     __main__:   1 chunks from global_who-ethics-governance-ai-health-2021.md
+2026-11-10 13:48:02,843 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:02,860 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:02,861 INFO     __main__:   Stored 1 chunks from global_who-ethics-governance-ai-health-2021.md
+2026-11-10 13:48:02,861 INFO     __main__: Ingesting Latin_America_and_Caribbean_ilia-2025.md ...
+2026-11-10 13:48:02,861 INFO     __main__:   1 chunks from Latin_America_and_Caribbean_ilia-2025.md
+2026-11-10 13:48:05,026 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:05,036 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:05,036 INFO     __main__:   Stored 1 chunks from Latin_America_and_Caribbean_ilia-2025.md
+2026-11-10 13:48:05,036 INFO     __main__: Ingesting Qatar_qatar-ncsa-privacy-notice-guideline.md ...
+2026-11-10 13:48:05,036 INFO     __main__:   1 chunks from Qatar_qatar-ncsa-privacy-notice-guideline.md
+2026-11-10 13:48:07,212 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:07,230 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:07,230 INFO     __main__:   Stored 1 chunks from Qatar_qatar-ncsa-privacy-notice-guideline.md
+2026-11-10 13:48:07,230 INFO     __main__: Ingesting Qatar_qatar-pdppl-13-2016.md ...
+2026-11-10 13:48:07,230 INFO     __main__:   1 chunks from Qatar_qatar-pdppl-13-2016.md
+2026-11-10 13:48:09,428 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:09,445 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:09,445 INFO     __main__:   Stored 1 chunks from Qatar_qatar-pdppl-13-2016.md
+2026-11-10 13:48:09,445 INFO     __main__: Ingesting Saudi_Arabia_saudi-pdpl-2021.md ...
+2026-11-10 13:48:09,445 INFO     __main__:   1 chunks from Saudi_Arabia_saudi-pdpl-2021.md
+2026-11-10 13:48:11,649 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:11,669 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:11,669 INFO     __main__:   Stored 1 chunks from Saudi_Arabia_saudi-pdpl-2021.md
+2026-11-10 13:48:11,669 INFO     __main__: Ingesting UAE_uae-pdpl-fdl-45-2021.md ...
+2026-11-10 13:48:11,669 INFO     __main__:   1 chunks from UAE_uae-pdpl-fdl-45-2021.md
+2026-11-10 13:48:13,867 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:13,887 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:13,887 INFO     __main__:   Stored 1 chunks from UAE_uae-pdpl-fdl-45-2021.md
+2026-11-10 13:48:13,887 INFO     __main__: Ingesting UK_uk-ico-age-appropriate-design-code.md ...
+2026-11-10 13:48:13,888 INFO     __main__:   1 chunks from UK_uk-ico-age-appropriate-design-code.md
+2026-11-10 13:48:16,070 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:16,087 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:16,087 INFO     __main__:   Stored 1 chunks from UK_uk-ico-age-appropriate-design-code.md
+2026-11-10 13:48:16,087 INFO     __main__: Ingesting US_fda-general-wellness-2026.md ...
+2026-11-10 13:48:16,088 INFO     __main__:   1 chunks from US_fda-general-wellness-2026.md
+2026-11-10 13:48:18,261 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:18,282 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:18,282 INFO     __main__:   Stored 1 chunks from US_fda-general-wellness-2026.md
+2026-11-10 13:48:18,282 INFO     __main__: Ingesting US_ftc-dark-patterns-2022.md ...
+2026-11-10 13:48:18,283 INFO     __main__:   1 chunks from US_ftc-dark-patterns-2022.md
+2026-11-10 13:48:20,448 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:20,468 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:20,468 INFO     __main__:   Stored 1 chunks from US_ftc-dark-patterns-2022.md
+2026-11-10 13:48:20,468 INFO     __main__: Ingesting US_us-coppa-rule-2025-amendments.md ...
+2026-11-10 13:48:20,468 INFO     __main__:   1 chunks from US_us-coppa-rule-2025-amendments.md
+2026-11-10 13:48:22,647 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:22,666 INFO     server.knowledge.kb: Added 1 documents to collection 'kb_main'
+2026-11-10 13:48:22,666 INFO     __main__:   Stored 1 chunks from US_us-coppa-rule-2025-amendments.md
+2026-11-10 13:48:22,667 INFO     __main__: Ingesting 2024-WAIC-Final-AI for Good Use Cases Collection.pdf ...
+C:\Users\Roaa_\OneDrive - University of Doha for Science and Technology\Documents\GitHub\ITUAIReadiness\simulation\.venv\Lib\site-packages\fitz\__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+2026-11-10 13:48:23,020 INFO     __main__: Parsed 2024-WAIC-Final-AI for Good Use Cases Collection.pdf with PyMuPDF (492576 chars, 232 pages)
+2026-11-10 13:48:23,038 INFO     __main__:   330 chunks from 2024-WAIC-Final-AI for Good Use Cases Collection.pdf
+2026-11-10 13:48:25,461 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:25,684 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:25,885 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,068 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,234 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,406 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,560 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,722 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:26,869 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,027 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,182 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,347 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,504 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,664 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:27,820 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:28,000 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:28,150 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:28,332 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:30,468 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:30,640 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:30,760 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:31,053 INFO     server.knowledge.kb: Added 330 documents to collection 'kb_usecase'
+2026-11-10 13:48:31,053 INFO     __main__:   Stored 330 chunks from 2024-WAIC-Final-AI for Good Use Cases Collection.pdf
+2026-11-10 13:48:31,055 INFO     __main__: Ingesting Innovate-for-impact-Geneva-AI for Good 2025.pdf ...
+2026-11-10 13:48:32,507 INFO     __main__: Parsed Innovate-for-impact-Geneva-AI for Good 2025.pdf with PyMuPDF (1878660 chars, 866 pages)
+2026-11-10 13:48:32,602 INFO     __main__:   1292 chunks from Innovate-for-impact-Geneva-AI for Good 2025.pdf
+2026-11-10 13:48:35,042 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,206 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,413 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,549 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,689 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,836 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:35,992 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,170 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,336 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,490 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,645 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,804 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:36,960 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,108 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,260 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,438 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,603 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,774 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:37,930 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,087 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,243 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,389 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,552 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,714 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:38,870 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,013 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,168 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,320 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,457 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,611 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,756 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:39,911 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,065 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,217 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,383 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,545 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,699 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:40,854 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,005 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,167 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,321 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,481 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,637 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,786 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:41,938 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,101 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,243 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,394 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,562 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,713 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:42,881 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,024 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,178 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,333 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,488 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,640 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,806 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:43,967 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,126 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,268 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,418 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,573 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,719 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:44,870 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,017 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,168 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,330 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,483 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,641 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,789 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:45,949 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,103 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,265 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,413 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,565 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,721 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:46,875 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:47,032 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:47,188 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:47,338 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:47,458 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:48,631 INFO     server.knowledge.kb: Added 1292 documents to collection 'kb_usecase'
+2026-11-10 13:48:48,631 INFO     __main__:   Stored 1292 chunks from Innovate-for-impact-Geneva-AI for Good 2025.pdf
+2026-11-10 13:48:48,639 INFO     __main__: Ingesting ITU-T_Y.3172_summary.txt ...
+2026-11-10 13:48:48,640 INFO     __main__:   4 chunks from ITU-T_Y.3172_summary.txt
+2026-11-10 13:48:50,845 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:50,868 INFO     server.knowledge.kb: Added 4 documents to collection 'kb_usecase'
+2026-11-10 13:48:50,868 INFO     __main__:   Stored 4 chunks from ITU-T_Y.3172_summary.txt
+2026-11-10 13:48:50,868 INFO     __main__: Ingesting KSA.T-AI4G-AI4GOOD-2024-2-PDF-E.pdf ...
+2026-11-10 13:48:50,942 INFO     __main__: Parsed KSA.T-AI4G-AI4GOOD-2024-2-PDF-E.pdf with PyMuPDF (150158 chars, 63 pages)
+2026-11-10 13:48:50,946 INFO     __main__:   103 chunks from KSA.T-AI4G-AI4GOOD-2024-2-PDF-E.pdf
+2026-11-10 13:48:53,436 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:53,624 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:53,829 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:53,984 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:54,150 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:54,299 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:54,370 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:54,479 INFO     server.knowledge.kb: Added 103 documents to collection 'kb_usecase'
+2026-11-10 13:48:54,479 INFO     __main__:   Stored 103 chunks from KSA.T-AI4G-AI4GOOD-2024-2-PDF-E.pdf
+2026-11-10 13:48:54,480 INFO     __main__: Ingesting T-REC-Y.3172-201906-I!!PDF-E.pdf ...
+2026-11-10 13:48:54,529 INFO     __main__: Parsed T-REC-Y.3172-201906-I!!PDF-E.pdf with PyMuPDF (72971 chars, 34 pages)
+2026-11-10 13:48:54,532 INFO     __main__:   50 chunks from T-REC-Y.3172-201906-I!!PDF-E.pdf
+2026-11-10 13:48:56,905 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:57,060 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:57,213 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:57,244 INFO     httpx: HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-11-10 13:48:57,312 INFO     server.knowledge.kb: Added 50 documents to collection 'kb_usecase'
+2026-11-10 13:48:57,312 INFO     __main__:   Stored 50 chunks from T-REC-Y.3172-201906-I!!PDF-E.pdf
+Framework definitions: 19 documents loaded
+
+Ingesting all documents from: C:\Users\Roaa_\OneDrive - University of Doha for Science and Technology\Documents\GitHub\adhd-productivity\knowledge\InputDocs
+
+--- Ingestion Results ---
+  Policy_Register/Australia_NT_nt-ai-assurance-framework.md 1 chunks
+  Policy_Register/Bahrain_bahrain-ai-general-policy-2025.md 1 chunks
+  Policy_Register/Bahrain_bahrain-ntp6-2023.md       1 chunks
+  Policy_Register/Bahrain_bahrain-pdpl-30-2018.md    1 chunks
+  Policy_Register/EU_ec-guidelines-prohibited-ai-practices-2025.md 1 chunks
+  Policy_Register/EU_eu-ai-act-2024-1689.md          1 chunks
+  Policy_Register/EU_eu-digital-omnibus-ai-2026-1744.md 1 chunks
+  Policy_Register/EU_eu-dsa-art28-minors-guidelines-2025.md 1 chunks
+  Policy_Register/EU_eu-gdpr-2016-679.md             1 chunks
+  Policy_Register/EU_eu-ucpd-2005-29.md              1 chunks
+  Policy_Register/EU_mdcg-2019-11-rev1.md            1 chunks
+  Policy_Register/Latin_America_and_Caribbean_ilia-2025.md 1 chunks
+  Policy_Register/Qatar_qatar-ncsa-privacy-notice-guideline.md 1 chunks
+  Policy_Register/Qatar_qatar-pdppl-13-2016.md       1 chunks
+  Policy_Register/Saudi_Arabia_saudi-pdpl-2021.md    1 chunks
+  Policy_Register/UAE_uae-pdpl-fdl-45-2021.md        1 chunks
+  Policy_Register/UK_uk-ico-age-appropriate-design-code.md 1 chunks
+  Policy_Register/US_fda-general-wellness-2026.md    1 chunks
+  Policy_Register/US_ftc-dark-patterns-2022.md       1 chunks
+  Policy_Register/US_us-coppa-rule-2025-amendments.md 1 chunks
+  Policy_Register/global_ieee-7014-2024.md           1 chunks
+  Policy_Register/global_imdrf-n81-2025.md           1 chunks
+  Policy_Register/global_imdrf-samd-n12-2014.md      1 chunks
+  Policy_Register/global_iso-iec-23894-2023.md       1 chunks
+  Policy_Register/global_iso-iec-42001-2023.md       1 chunks
+  Policy_Register/global_itu-ai-ready-report-2-0.md  1 chunks
+  Policy_Register/global_itu-t-y3172.md              1 chunks
+  Policy_Register/global_itu-t-y3173-y3174.md        1 chunks
+  Policy_Register/global_oecd-ai-principles.md       1 chunks
+  Policy_Register/global_oecd-classification-ai-systems-2022.md 1 chunks
+  Policy_Register/global_un-crpd-2006.md             1 chunks
+  Policy_Register/global_un-pact-future-gdc-a-res-79-1.md 1 chunks
+  Policy_Register/global_unesco-ram-2023.md          1 chunks
+  Policy_Register/global_unesco-rec-ethics-ai-2021.md 1 chunks
+  Policy_Register/global_w3c-coga-usable-2021.md     1 chunks
+  Policy_Register/global_w3c-wcag-2-2.md             1 chunks
+  Policy_Register/global_who-ethics-governance-ai-health-2021.md 1 chunks
+
+Total: 37 chunks from 37 files
+
+--- Ingesting Use Case documents into kb_usecase ---
+  2024-WAIC-Final-AI for Good Use Cases Collection.pdf 330 chunks
+  ITU-T_Y.3172_summary.txt                           4 chunks
+  Innovate-for-impact-Geneva-AI for Good 2025.pdf    1292 chunks
+  KSA.T-AI4G-AI4GOOD-2024-2-PDF-E.pdf                103 chunks
+  T-REC-Y.3172-201906-I!!PDF-E.pdf                   50 chunks
+
+Use Case KB: 1779 chunks from 5 files
+
+KB stats: {'kb_main': 37, 'kb_framework': 19, 'kb_decisions': 0, 'kb_usecase': 1779}

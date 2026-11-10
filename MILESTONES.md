@@ -20,7 +20,7 @@ verified or openly labelled as unverified. Everything is frozen by **20:00**, le
 | M0 Agree the split | Roaa | 10:00–10:30 | – | to do |
 | M1 Verify legal claims | Roaa + Claude | 10:30–14:00 | M0 | to do |
 | M2 Code fixes | Farha approves, Claude codes | 14:00–15:00 | M1 | to do |
-| M3 ITU ingest | Roaa | 13:00–16:00 (runs beside M1) | Ollama free | **in progress** |
+| M3 ITU ingest | Roaa | 13:00–16:00 (runs beside M1) | Ollama free | **done 13:50** (send note to Farha) |
 | M4 Report | Farha | 12:00–20:00, full draft by 18:00 | M1, M2, M3 | to do |
 | M5 Freeze and publish | Team | 20:00–21:00 | M2, M4 | to do |
 | M6 Submit report and KB | Team | 21:00–21:30 | M5 | to do |
@@ -64,9 +64,10 @@ still-unverified provisions goes to Farha.
 ### M3. ITU reference ingest (Roaa)
 
 - [x] Download `nomic-embed-text`; write `scripts/run_itu_ingest.sh` and `scripts/compare_itu_retrieval.py`
-- [ ] Run `bash scripts/run_itu_ingest.sh` (started 10 Nov)
-- [ ] Read `runs/itu_ingest/comparison.md`: chunk count, top-1 hits on the 4 test queries, country tagging
-- [ ] Send Farha 2–3 sentences and the table for the report
+- [x] Run `bash scripts/run_itu_ingest.sh` (10 Nov, 13:46–13:50): 37 documents in `kb_main`, exit 0
+- [x] Read `runs/itu_ingest/comparison.md`: 37 chunks (1 per document); ITU top-1 3/4 vs BM25 4/4; 35 of 37 tagged `global`
+- [x] Draft the report text: `runs/itu_ingest/REPORT_NOTE.md`
+- [ ] Send Farha `REPORT_NOTE.md` and `comparison.md` (Roaa)
 
 **Done when:** `runs/itu_ingest/ingest_log.txt` and `comparison.md` exist and Farha has the summary.
 
