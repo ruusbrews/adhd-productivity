@@ -15,6 +15,8 @@ Sources opened:
 
 ## 10 Nov 2026
 
+### First batch: AI Act
+
 | doc_id | Provision | Result | Evidence |
 |---|---|---|---|
 | eu-ai-act-2024-1689 | Art. 5(1)(f) | Confirmed (was already verified) | Article text quoted in [CG] p. 77; four cumulative conditions in para. 242 |
@@ -22,6 +24,35 @@ Sources opened:
 | eu-ai-act-2024-1689 | Art. 5(1)(a)-(b) | **Now verified** | [CG] para. 63 (three types of technique), para. 104-108 (age, children under 18, disability) |
 | ec-guidelines-prohibited-ai-practices-2025 | Art. 5(1)(f) examples | Confirmed; paraphrase made more precise | [CG] para. 255 (students' interest and attention: prohibited; gaze points only: not prohibited), para. 256-257 and 263 (medical exception) |
 | ec-guidelines-prohibited-ai-practices-2025 | Intentions; biometric limitation | **Now verified**; paraphrase made more precise | [CG] para. 244-245, 250, 251 (keystrokes, eye tracking, heartbeats are behavioural biometrics), 265 (text and physical states out of scope) |
+
+### Second batch (10 Nov 2026)
+
+Sources opened:
+
+- **[GDPR]** Regulation (EU) 2016/679, text *as adopted* (identical to OJ L 119, 4.5.2016), on legislation.gov.uk:
+  [Art. 8](https://www.legislation.gov.uk/eur/2016/679/article/8/adopted),
+  [Art. 9](https://www.legislation.gov.uk/eur/2016/679/article/9/adopted),
+  [Art. 22](https://www.legislation.gov.uk/eur/2016/679/article/22/adopted),
+  [Art. 35](https://www.legislation.gov.uk/eur/2016/679/article/35/adopted).
+- **[DSA-G]** Commission, *Guidelines on measures to ensure a high level of privacy, safety and security for minors
+  online, pursuant to Article 28(4) of Regulation (EU) 2022/2065*, C(2025) 6826 final, 7 Oct 2025
+  ([Commission page](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-protection-minors),
+  which links the Official Journal version OJ C/2025/5519 cited in the register).
+
+| doc_id | Provision | Result | Evidence |
+|---|---|---|---|
+| eu-gdpr-2016-679 | Art. 8 | **Now verified** | [GDPR] Art. 8(1): 16, Member States may lower to not below 13; below that, consent given or authorised by the holder of parental responsibility |
+| eu-gdpr-2016-679 | Art. 9(1)-(2)(a) | **Now verified**; note added | [GDPR] Art. 9(1)-(2)(a). Biometric data is special-category only when processed to uniquely identify a person; health data always |
+| eu-gdpr-2016-679 | Arts. 22, 35 | **Now verified** | [GDPR] Art. 22(1); Art. 35(1), 35(3)(a)-(b) |
+| eu-dsa-art28-minors-guidelines-2025 | Default settings | Confirmed; reference made exact | [DSA-G] Section 6.3.1, para. 57(b)(vi)-(viii) (push notifications off by default and in core sleep hours; streaks and autoplay off) |
+| eu-dsa-art28-minors-guidelines-2025 | "Section 6.4 interface design" | **Corrected** | The register merged two sections. Engagement-driven persuasive design is Section 6.4(b); scarcity, intermittent or random rewards and random-outcome loot boxes are Section 6.6 Commercial practices, para. 69(k)-(l). Reference and paraphrase fixed |
+| us-coppa-rule-2025-amendments | §312.2, §312.5(a)(2) | Still unverified | eCFR and Federal Register redirect automated requests to a block page; to be checked by hand |
+
+**Qatar.** One search found no binding Qatari rule on emotion or attention inference in schools; Qatar's AI material
+is strategic and ethical guidance (MCIT National AI Strategy 2019, AI ethics principles). This supports a policy-gap
+finding, worded as "no binding Qatari equivalent of AI Act Art. 5(1)(f) was found", not as a proven absence. Qatar
+PDPPL Arts. 16-17 were already marked verified from translations and were not re-checked against an official
+Arabic text.
 
 ## What this means for the agent and the scenario
 

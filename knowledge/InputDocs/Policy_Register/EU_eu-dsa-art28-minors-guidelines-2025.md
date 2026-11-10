@@ -7,10 +7,10 @@ Tags: dark_patterns, children_data, advertising
 
 ## Provisions relevant to a digital ADHD-support app (paraphrased)
 
-### Section 6.4 interface design [verified]
-Minors should not face engagement-driven persuasive design or manipulative techniques like scarcity or intermittent/random rewards.
+### Section 6.4(b); Section 6.6 para. 69(k)-(l) [verified]
+Minors should not be exposed to persuasive design features aimed predominantly at engagement that may lead to overuse (Section 6.4, Online interface design), nor to manipulative design techniques such as scarcity, intermittent or random rewards, or to paid loot boxes with random outcomes, that can lead to excessive or unwanted spending or addictive behaviour (Section 6.6, Commercial practices, para. 69(k)-(l)).
 Relevance: Variable-ratio rewards collide with this; use predictable user-set rewards.
 
-### Default settings [verified]
-Push notifications should be off by default for minors and always off during core sleep hours; streaks, autoplay and similar excessive-use features disabled by default.
+### Section 6.3.1 Default settings, para. 57(b) [verified]
+Push notifications should be off by default for minors and always off during core sleep hours (para. 57(b)(vii)); streaks, autoplay and similar excessive-use features disabled by default (para. 57(b)(vi), (viii)).
 Relevance: Break prompts for minors should be opt-in, if the app is an 'online platform' (uncertain).

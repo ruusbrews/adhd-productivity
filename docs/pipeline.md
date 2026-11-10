@@ -4,7 +4,7 @@ How one tick of the simulation flows through the system, and where the policy kn
 Node labels in brackets are the Y.3172 pipeline nodes; see [mapping.md](mapping.md) for the full mapping.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph USER["Simulated user (ML sandbox)"]
         SRC["[SRC] SimulatedUser<br/>ADHD profile, age group, context<br/>task telemetry, self-report,<br/>gaze, HRV/EDA, motion"]
     end
@@ -32,7 +32,7 @@ flowchart LR
         WORLD["Education dept,<br/>monitoring agency<br/>(scenario events)"]
     end
 
-    AUDIT[("Audit log<br/>hash-chained JSONL<br/>every decision + citations")]
+    AUDIT[("Audit log: hash-chained JSONL<br/>written by the R3 check, policy check,<br/>adviser and regulator, with citations")]
 
     subgraph ITU["ITU reference KB (evidence, not used by the agent)"]
         INPUT["knowledge/InputDocs<br/>37 text files"]
@@ -60,10 +60,7 @@ flowchart LR
     REG -- "info request, enforcement order" --> PROV
     PROV -- "statement, compliance report" --> REG
 
-    GATE --> AUDIT
-    P --> AUDIT
-    ADV --> AUDIT
-    REG --> AUDIT
+    D --> AUDIT
 
     POL -. "build.py" .-> INPUT
     INPUT -. "ITU ingest.py (unmodified)" .-> CHROMA
@@ -71,7 +68,7 @@ flowchart LR
 
 ## Reading it
 
-- **Left to right is one tick.** The user produces signals; the agent perceives only consented channels. In a school
+- **Top to bottom through the agent is one tick.** The user produces signals; the agent perceives only consented channels. In a school
   or workplace, the R3 check drops gaze and HRV/EDA before they become beliefs. The agent picks an intervention, the
   policy check allows, changes or blocks it, and the user responds.
 - **Dotted lines are retrieval.** The policy check, the R3 check and the adviser query the knowledge base to fetch the

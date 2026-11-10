@@ -18,8 +18,8 @@
   "blocking_decisions_by_rule": {},
   "modifying_decisions_by_rule": {},
   "citations_verified_vs_unverified": {
-    "verified": 45,
-    "unverified": 28
+    "verified": 49,
+    "unverified": 24
   },
   "rules_unsupported_by_retrieval": 0,
   "policy_gaps_surfaced": [

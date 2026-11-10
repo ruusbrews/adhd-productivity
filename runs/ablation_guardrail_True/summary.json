@@ -24,8 +24,8 @@
     "R2b-push-default-minors": 9
   },
   "citations_verified_vs_unverified": {
-    "verified": 146,
-    "unverified": 31
+    "verified": 150,
+    "unverified": 27
   },
   "rules_unsupported_by_retrieval": 0,
   "policy_gaps_surfaced": [

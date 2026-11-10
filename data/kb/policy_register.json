@@ -125,20 +125,20 @@
       {
         "ref": "Art. 9(1)-(2)(a)",
         "paraphrase": "Prohibits processing health data and identifying biometric data unless an exception such as explicit consent applies.",
-        "relevance_to_adhd_app": "HRV/EDA-derived attention or stress states in an ADHD context are very likely health data; explicit granular consent needed.",
-        "verified": false
+        "relevance_to_adhd_app": "HRV/EDA-derived attention or stress states in an ADHD context are very likely health data; explicit granular consent needed. Note Art. 9(1) covers biometric data only when processed for uniquely identifying a person.",
+        "verified": true
       },
       {
         "ref": "Art. 8",
         "paraphrase": "Child consent for online services valid from 16 (Member States may lower to 13); below that parental authorisation is required.",
         "relevance_to_adhd_app": "Younger students need verifiable parental consent.",
-        "verified": false
+        "verified": true
       },
       {
         "ref": "Arts. 22, 35",
         "paraphrase": "Limits solely automated decisions with significant effects; DPIA required for high-risk processing such as large-scale special-category data.",
         "relevance_to_adhd_app": "DPIA effectively mandatory.",
-        "verified": false
+        "verified": true
       }
     ],
     "tags": [
@@ -493,14 +493,14 @@
     "license_or_reuse_terms": "EUR-Lex/Commission reuse (attribution).",
     "relevant_provisions": [
       {
-        "ref": "Section 6.4 interface design",
-        "paraphrase": "Minors should not face engagement-driven persuasive design or manipulative techniques like scarcity or intermittent/random rewards.",
+        "ref": "Section 6.4(b); Section 6.6 para. 69(k)-(l)",
+        "paraphrase": "Minors should not be exposed to persuasive design features aimed predominantly at engagement that may lead to overuse (Section 6.4, Online interface design), nor to manipulative design techniques such as scarcity, intermittent or random rewards, or to paid loot boxes with random outcomes, that can lead to excessive or unwanted spending or addictive behaviour (Section 6.6, Commercial practices, para. 69(k)-(l)).",
         "relevance_to_adhd_app": "Variable-ratio rewards collide with this; use predictable user-set rewards.",
         "verified": true
       },
       {
-        "ref": "Default settings",
-        "paraphrase": "Push notifications should be off by default for minors and always off during core sleep hours; streaks, autoplay and similar excessive-use features disabled by default.",
+        "ref": "Section 6.3.1 Default settings, para. 57(b)",
+        "paraphrase": "Push notifications should be off by default for minors and always off during core sleep hours (para. 57(b)(vii)); streaks, autoplay and similar excessive-use features disabled by default (para. 57(b)(vi), (viii)).",
         "relevance_to_adhd_app": "Break prompts for minors should be opt-in, if the app is an 'online platform' (uncertain).",
         "verified": true
       }
