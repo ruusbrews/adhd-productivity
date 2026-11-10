@@ -17,16 +17,22 @@ verified or openly labelled as unverified. Everything is frozen by **20:00**, le
 
 | Milestone | Owner | Target | Depends on | Status |
 |---|---|---|---|---|
-| M0 Agree the split | Roaa | 10:00–10:30 | – | to do |
-| M1 Verify legal claims | Roaa + Claude | 10:30–14:00 | M0 | to do |
-| M2 Code fixes | Farha approves, Claude codes | 14:00–15:00 | M1 | to do |
+| M0 Agree the split | Roaa | done | – | **done**: Roaa does all core work, Farha writes the report |
+| M2 Code fixes | Roaa + Claude | 14:00–15:00 | – | to do |
+| M1 Verify legal claims | Roaa + Claude | 15:00–18:00 | – | to do |
 | M3 ITU ingest | Roaa | 13:00–16:00 (runs beside M1) | Ollama free | **done 13:50** (send note to Farha) |
-| M4 Report | Farha | 12:00–20:00, full draft by 18:00 | M1, M2, M3 | to do |
-| M5 Freeze and publish | Team | 20:00–21:00 | M2, M4 | to do |
-| M6 Submit report and KB | Team | 21:00–21:30 | M5 | to do |
+| M4 Report | Farha (writing only) | 14:00–20:00, full draft by 18:30 | inputs from Roaa | to do |
+| M5 Freeze and publish | Roaa | 20:00–21:00 | M1, M2, M4 | to do |
+| M6 Submit report and KB | Roaa | 21:00–21:30 | M5 | to do |
 | **Deadline** | | **22:00** | | |
 
-Verification (M1) is the longest task. The ITU ingest (M3) runs beside it, and the report (M4) is drafted while both finish.
+Roaa does all core work (code, verification, packaging, submission); Farha only writes the report from what Roaa
+hands over. Code fixes (M2) go first because they are quick and independent; verification (M1) follows and may
+re-word R3/A1, then one final re-run.
+
+**Farha receives:** `runs/itu_ingest/REPORT_NOTE.md` + `comparison.md` (now), the verified/unverified provision list
+(after M1), the final `runs/scenario/summary.json` (after M2), and notes on the Qatar framing and the wording
+"rules grounded in retrieved, cited provisions".
 
 ## Milestones in detail
 
@@ -52,12 +58,15 @@ Verification (M1) is the longest task. The ITU ingest (M3) runs beside it, and t
 **Done when:** the KB rebuilds, 15 tests pass, the scenario still passes 10 of 10, and a list of verified and
 still-unverified provisions goes to Farha.
 
-### M2. Code fixes (Farha approves, Claude implements)
+### M2. Code fixes (Roaa + Claude)
 
 - [ ] `perceive()` in `bdi.py`: drop biometric channels in school and workplace settings (R3 issue)
-- [ ] Adviser rule A3 in `agents.py`: cite AI Act Art. 5(1)(b), not 5(1)(f)
-- [ ] `summary.json`: count R2b as "modified", not "blocked"
+- [ ] Adviser rule A3 in `agents.py`: query so retrieval cites AI Act Art. 5(1)(a)-(b), not 5(1)(f)
+- [ ] `scenario.py` summary: count R2b as "modified", not "blocked"
 - [ ] Re-run the scenario with and without the policy check; regenerate `runs/`
+- [ ] README: ITU ingest status and results; new limitations (regulator trusts the provider's compliance report,
+      minor consents without a guardian, compressed timeline); HANDOVER task 2 done
+- Kept as limitations, no code: guardian consent for minors (would break X1), regulator verification of provider reports
 
 **Done when:** 10 of 10 with the policy check on, the ablation still shows a difference, tests pass and `runs/` matches the code.
 
