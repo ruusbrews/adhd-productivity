@@ -1,20 +1,16 @@
 #!/usr/bin/env bash
 # Hackathon task 2: run the ITU reference ingest on knowledge/InputDocs, then compare retrieval with BM25.
-# One queued script so only one Ollama job runs at a time. Run from Git Bash:
+# Run from Git Bash (Windows) at the repo root:
 #     bash scripts/run_itu_ingest.sh
 # Needs: Ollama running with nomic-embed-text pulled; ITUAIReadiness cloned next to this repo.
+# BASE_PY must be Python 3.11-3.13 (chromadb had no 3.14 wheels when this was run).
 set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 ITU_SIM="${ITU_SIM:-$REPO/../ITUAIReadiness/simulation}"
 OUT="$REPO/runs/itu_ingest"
-BASE_PY="${BASE_PY:-/c/Users/Roaa_/anaconda3/python.exe}"   # Python 3.13; chromadb has no 3.14 wheels yet
+BASE_PY="${BASE_PY:-python}"
 VPY="$ITU_SIM/.venv/Scripts/python.exe"
-
-# 0. Wait for any running model job (e.g. AquaMaa eval_agent.py) so Ollama is not shared.
-while powershell -NoProfile -Command "if (Get-CimInstance Win32_Process -Filter \"Name like 'python%'\" | Where-Object { \$_.CommandLine -match 'eval_agent|run_eval|batch' }) { exit 0 } else { exit 1 }"; do
-  echo "$(date +%H:%M) another model job is running; waiting 60 s"; sleep 60
-done
 
 # 1. ITU environment (separate venv inside the ITU clone).
 if [ ! -x "$VPY" ]; then
