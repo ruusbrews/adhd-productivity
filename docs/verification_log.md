@@ -46,7 +46,14 @@ Sources opened:
 | eu-gdpr-2016-679 | Arts. 22, 35 | **Now verified** | [GDPR] Art. 22(1); Art. 35(1), 35(3)(a)-(b) |
 | eu-dsa-art28-minors-guidelines-2025 | Default settings | Confirmed; reference made exact | [DSA-G] Section 6.3.1, para. 57(b)(vi)-(viii) (push notifications off by default and in core sleep hours; streaks and autoplay off) |
 | eu-dsa-art28-minors-guidelines-2025 | "Section 6.4 interface design" | **Corrected** | The register merged two sections. Engagement-driven persuasive design is Section 6.4(b); scarcity, intermittent or random rewards and random-outcome loot boxes are Section 6.6 Commercial practices, para. 69(k)-(l). Reference and paraphrase fixed |
-| us-coppa-rule-2025-amendments | §312.2, §312.5(a)(2) | Still unverified | eCFR and Federal Register redirect automated requests to a block page; to be checked by hand |
+| us-coppa-rule-2025-amendments | §312.2 'personal information' (10) | **Now verified** (checked by hand) | [eCFR] item (10): fingerprints, handprints, retina and iris patterns, genetic data, voiceprints, gait patterns, facial templates, faceprints; no physiological signals named |
+| us-coppa-rule-2025-amendments | §312.5(a)(2); retention | **Now verified**; reference widened | [eCFR] §312.5(a)(2) separate consent to third-party disclosure unless integral to the service; §312.10 written retention policy; §312.2 'support for the internal operations' (2) bars behavioral advertising and profiling. Compliance date 22 Apr 2026 not shown in eCFR |
+| us-coppa-rule-2025-amendments | Document citation | **Corrected** | Register reported "90 FR 16918 or 16970"; the eCFR source note gives 90 FR 16977, Apr. 22, 2025. Primary URL changed from a law-firm page to eCFR |
+
+**[eCFR]** 16 CFR Part 312, eCFR text up to date as of 6 Nov 2026, downloaded by hand from
+[ecfr.gov](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312) (eCFR blocks automated access).
+COPPA defines a child as under 13 (§312.2), so for the scenario's teenage user GDPR Art. 8 (under 16) is the relevant
+consent rule, not COPPA.
 
 **Qatar.** One search found no binding Qatari rule on emotion or attention inference in schools; Qatar's AI material
 is strategic and ethical guidance (MCIT National AI Strategy 2019, AI ethics principles). This supports a policy-gap
