@@ -59,15 +59,36 @@ class BDIAgent:
         self.log = lambda t, ev, payload: self.audit.append(t, self.name, ev, payload)
 
     # ------------------------------------------------------------------ perception (periodic)
+    def _biometric_gate(self, t: int) -> set[str]:
+        """Channels the policy node bars from attention inference in this context (R3). Re-checked and logged
+        only when the deployment context or consent changes, so the audit shows one decision per change."""
+        key = (self.beliefs["deployment_context"], tuple(sorted(c for c, ok in self.beliefs["consent"].items() if ok)))
+        if key != getattr(self, "_gate_key", None):
+            self._gate_key = key
+            verdict = self.guardrail.review_inference(self.beliefs)
+            self._gate = set(verdict.modifications.get("suppressed_channels", []))
+            if verdict.decision == "block":
+                self.log(t, "decision", {
+                    "intention": "infer-attention-from-biometrics", "score": None, "forced_by_provider": False,
+                    "conditions": [], "evidence_level": "n/a",
+                    "beliefs": {k: self.beliefs[k] for k in ("age_group", "deployment_context", "profile")},
+                    "policy_review": verdict.as_dict(),
+                    "rationale": f"Perception step: {', '.join(sorted(self._gate))} data may not be used to infer "
+                                 f"attention in a {self.beliefs['deployment_context']} deployment (R3). These channels "
+                                 "are dropped before they reach the belief base; attention is estimated from "
+                                 "behaviour only."})
+        return self._gate
+
     def perceive(self, frame: dict) -> None:
         b, consent = self.beliefs, self.beliefs["consent"]
-        active = [c for c, ok in consent.items() if ok]
+        barred = self._biometric_gate(frame["tick"])
+        active = [c for c, ok in consent.items() if ok and c not in barred]
         for ch in active:
             for key in CHANNELS[ch]:
                 if key in frame:
                     self.windows[key].append(frame[key])
-        for ch, keys in CHANNELS.items():           # data minimisation: drop beliefs of withdrawn channels
-            if not consent.get(ch):
+        for ch, keys in CHANNELS.items():           # data minimisation: drop beliefs of withdrawn or barred channels
+            if not consent.get(ch) or ch in barred:
                 for k in keys:
                     self.windows.pop(k, None)
                     b.pop(k, None)

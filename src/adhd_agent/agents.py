@@ -134,7 +134,8 @@ ADVISOR_RULES: list[AdvisorRule] = [
         "A3-in-app-purchases-vulnerable-users",
         "In-app purchases linked to engagement mechanics target users with elevated impulsive-buying risk; unfair "
         "commercial practice rules judge them from the vulnerable group's perspective.",
-        "unfair commercial practices vulnerable consumers undue influence dark patterns advertising minors",
+        "unfair commercial practices vulnerable consumers undue influence dark patterns advertising minors "
+        "exploitation of vulnerabilities age disability purchases",
         ("eu-ucpd-2005-29", "eu-ai-act-2024-1689", "ftc-dark-patterns-2022"),
         lambda f: ("non_compliant" if f.get("iap_linked_rewards") and (f.get("age_group") == "minor" or f.get("adhd_profile_users"))
                    else "high_risk" if f.get("iap_reports") else None),

@@ -14,11 +14,15 @@ audit log.
 
 ## Quick start (Python 3.11+, standard library only; `pytest` for tests)
 
+One command reproduces the submitted results (scenario with and without the policy check, baselines, a readable
+story of the run, tests): `bash scripts/reproduce.sh` (add `--rebuild` after editing `docs/research/`). Step by step:
+
 ```bash
 export PYTHONPATH=src
 python -m adhd_kb.build                                   # research docs -> KB (data/kb) + ITU-style InputDocs
 python -m adhd_agent.scenario scenarios/error_scenario.json --out runs/scenario
-python -m adhd_agent.scenario scenarios/error_scenario.json --out runs/ablation --no-guardrail
+python -m adhd_agent.scenario scenarios/error_scenario.json --out runs/ablation_guardrail_False --no-guardrail
+python scripts/narrate_run.py runs/scenario/audit.jsonl   # readable story of the run
 python -m adhd_agent.compare --seeds 20                   # no-intervention vs fixed-schedule vs BDI+KB
 python -m pytest -q
 ```
@@ -51,7 +55,9 @@ Key design choices that come from the research evidence:
   (construct-ambiguous)" and cannot trigger an intervention without a behavioural corroborator (rule R6);
 * motion is never treated as inattention evidence (it can be compensatory);
 * variable-ratio rewards and streaks are blocked for minors (R1), push prompts to minors are downgraded to silent
-  in-app delivery (R2b), biometric attention inference is blocked in school/workplace contexts (R3);
+  in-app delivery (R2b), biometric attention inference is blocked in school/workplace contexts (R3). R3 acts at the
+  perception step: gaze and HRV/EDA are dropped before they reach the belief base, because the restriction targets
+  the inference itself, not only the interventions that would use it;
 * unconsented sensor channels never enter the belief base (data minimisation).
 
 ## Error scenario (`scenarios/error_scenario.json`)
@@ -74,8 +80,14 @@ pip install -r requirements.txt && ollama pull nomic-embed-text
 python -m server.knowledge.ingest --dir /path/to/adhd-productivity/knowledge/InputDocs
 ```
 
-**Status: not run yet.** Ollama/Chroma are not installed on the development machine, so the offline BM25 retriever
-(`src/adhd_kb/store.py`) is what the demo and tests use. Note ITU's `infer_country()` works from file names.
+**Status: run on 10 Nov 2026** with `bash scripts/run_itu_ingest.sh` (ITU code unmodified). All 37 policy documents
+are in ITU's `kb_main` collection. Evidence: `runs/itu_ingest/ingest_log.txt` and `runs/itu_ingest/comparison.md`
+(ITU dense retrieval vs our BM25 on 8 queries; the expected document ranks first in 3 of 4 labelled queries for
+ITU, 4 of 4 for BM25). The ChromaDB store is not committed (39 MB); the script rebuilds it. Two findings:
+each document file is shorter than ITU's 256-word chunk, so dense retrieval matches whole documents rather than
+provisions; and ITU's file-name-based `infer_country()` tagged 35 of 37 documents as `global` (no Gulf patterns, and
+`EU_`/`UK_`/`US_` prefixes are not matched). The agent keeps using the provision-level BM25 retriever
+(`src/adhd_kb/store.py`).
 
 ## Honest limitations
 
@@ -87,3 +99,9 @@ python -m server.knowledge.ingest --dir /path/to/adhd-productivity/knowledge/Inp
 * No LLM is in the loop yet: retrieval + rules do the reasoning. Adviser findings are rule-driven templates grounded
   in retrieved provisions, not generated text.
 * ML Intent (Y.3172) and Arabic / multilingual support are not implemented.
+* Rules decide; retrieval supplies the cited provisions and flags a rule whose sources it cannot find
+  (`unsupported_by_retrieval`). The policy check is grounded in retrieved, cited provisions; it does not reason from the KB.
+* The regulator takes the provider's compliance report at face value; verifying remediation is not modelled.
+* The simulated minor consents to sensors without a guardian; guardian consent (GDPR Art. 8, Qatar PDPPL children's
+  provisions) is not enforced by R4.
+* The scenario timeline is compressed: 200 ticks of 30 simulated seconds stand for roughly six months of events.

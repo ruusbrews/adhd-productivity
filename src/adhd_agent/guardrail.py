@@ -15,6 +15,7 @@ from adhd_kb.store import Hit, KnowledgeBase
 CHANNEL_OF_SIGNAL = {"gaze_off_task": "gaze", "hrv_rmssd": "hrv_eda", "eda": "hrv_eda", "motion_fidget": "motion"}
 PHYSIO_ONLY = {"hrv_rmssd", "eda"}
 INSTITUTIONAL = {"school", "workplace"}
+BIOMETRIC_CHANNELS = {"gaze", "hrv_eda"}   # channels whose use for attention/emotion inference R3 restricts
 
 
 def required_channels(plan: dict) -> set[str]:
@@ -143,22 +144,37 @@ class PolicyGuardrail:
     def __init__(self, kb: KnowledgeBase, enabled: bool = True):
         self.kb, self.enabled = kb, enabled
 
+    def _result(self, rule: Rule, retrieved: list[str]) -> RuleResult:
+        hits = self.kb.search(rule.query, ("kb_policy",), k=10)
+        cites = _best_per_doc(hits, rule.cite)
+        retrieved += [h.id for h in hits[:5]]
+        ev = []
+        if rule.evidence_query:
+            ev = [h.cite() for h in self.kb.search(rule.evidence_query, ("kb_evidence",), k=2)]
+        return RuleResult(rule.rule_id, rule.decision, rule.reason, cites,
+                          unsupported_by_retrieval=not cites, design_rule=rule.design_rule, evidence=ev)
+
+    def review_inference(self, beliefs: dict) -> Verdict:
+        """Perception-level check (R3): may the agent infer attention from biometric channels here?
+
+        The EU AI Act targets the inference itself, so in school/workplace deployments the consented biometric
+        channels are blocked before they reach the belief base, not only the interventions that would use them.
+        """
+        channels = {c for c in BIOMETRIC_CHANNELS if beliefs["consent"].get(c)}
+        if not self.enabled or beliefs["deployment_context"] not in INSTITUTIONAL or not channels:
+            return Verdict("allow", [], [], {})
+        retrieved: list[str] = []
+        r3 = next(r for r in RULES if r.rule_id == "R3-biometric-attention-institutional")
+        return Verdict("block", [self._result(r3, retrieved)], sorted(set(retrieved)),
+                       {"suppressed_channels": sorted(channels)})
+
     def review(self, plan: dict, beliefs: dict) -> Verdict:
         if not self.enabled:
             return Verdict("allow", [], [], {})
         results, retrieved = [], []
         for rule in RULES:
-            if not rule.applies(plan, beliefs):
-                continue
-            hits = self.kb.search(rule.query, ("kb_policy",), k=10)
-            cites = _best_per_doc(hits, rule.cite)
-            retrieved += [h.id for h in hits[:5]]
-            ev = []
-            if rule.evidence_query:
-                ev = [h.cite() for h in self.kb.search(rule.evidence_query, ("kb_evidence",), k=2)]
-            results.append(RuleResult(rule.rule_id, rule.decision, rule.reason, cites,
-                                      unsupported_by_retrieval=not cites,
-                                      design_rule=rule.design_rule, evidence=ev))
+            if rule.applies(plan, beliefs):
+                results.append(self._result(rule, retrieved))
         if any(r.decision == "block" for r in results):
             decision, mods = "block", {}
         elif results:

@@ -46,6 +46,12 @@ for r in rows:
         if key in seen:
             continue
         seen.add(key)
+        if p["intention"] == "infer-attention-from-biometrics":   # perception-step check, not an intervention
+            print(f"\n[tick {t}] Perception step: biometric attention inference {d.upper()}ED")
+            print(f"  {p['rationale']}")
+            for rule in p["policy_review"]["rules"]:
+                print(f"    - {rule['rule']}  cites: {cites(rule)}")
+            continue
         show_decision(r, {"allow": "Support intervention ALLOWED", "modify": "Intervention CHANGED",
                           "block": "Intervention BLOCKED"}[d])
     elif a == "bdi" and e == "execution" and ("exec", p["delivery"]) not in seen:
